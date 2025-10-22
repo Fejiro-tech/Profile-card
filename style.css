@@ -56,7 +56,7 @@ header {
 h2[data-testid="test-user-name"] {
     font-size: 28px;
     font-weight: 700;
-    color: #2d3748;
+    color: #4a62cf;
     margin-bottom: 8px;
     word-wrap: break-word;
     line-height: 1.2;
@@ -223,7 +223,7 @@ main[data-testid="test-about-page"] {
 .contact-section {
     width: 100%;         
     max-width: 600px;          
-    padding: 15px 30px; 
+    padding: 15px 24px; 
     background: white;
     border-radius: 16px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
@@ -274,9 +274,8 @@ section[data-testid="test-about-extra"] li {
 section[data-testid="test-about-bio"] p,
 section[data-testid="test-about-goals"] p,
 section[data-testid="test-about-confidence"] p,
-section[data-testid="test-about-future-note"] p,
-section[data-testid="test-about-extra"] h2 {
-    margin: 20px 0;
+section[data-testid="test-about-future-note"] p {
+    margin: 10px 0;
 
 }
 
@@ -296,6 +295,7 @@ section[data-testid="test-about-extra"] h2 {
 .note-to-self h2,
 .extra-thoughts h2 {
     color: #4a62cf;
+    margin: 14px 0;
 }
 
 .contact-form {
