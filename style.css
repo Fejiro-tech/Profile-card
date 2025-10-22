@@ -208,12 +208,12 @@ main[data-testid="test-about-page"] {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    width: 100%;        
-    max-width: 800px;    
-    margin: 0 auto;      
+    width: 100%;         
+    max-width: 600px;   
     font-family: 'Segoe UI', sans-serif;
     align-items: center;
-    padding: 20px;       
+    margin: 0 auto;
+    padding: 0 15px;    
 }
 
 .about-section, 
@@ -222,34 +222,41 @@ main[data-testid="test-about-page"] {
 .note-to-self,
 .extra-thoughts, 
 .contact-section {
+    width: 100%;         
+    max-width: 600px;    
+    margin: 0 auto;      
+    padding: 15px 30px; 
     background: white;
     border-radius: 16px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding: 30px;
     font-size: 15px;
     line-height: 1.6;
     color: #2b3036;
     word-wrap: break-word;
-
-    width: 100%;         
-    max-width: 800px;    
-    margin: 0 auto;      
 }
 
-@media (max-width: 500px) {
-    main[data-testid="test-about-page"] {
-        padding: 10px 15px;
-    }
-
+@media (min-width: 768px) {
+    main[data-testid="test-about-page"],
     .about-section, 
     .goals, 
     .low-confidence,
     .note-to-self,
     .extra-thoughts, 
     .contact-section {
-        padding: 15px 20px;
+        max-width: 800px;   
+    }
+}
+
+@media (min-width: 1200px) {
+    main[data-testid="test-about-page"],
+    .about-section, 
+    .goals, 
+    .low-confidence,
+    .note-to-self,
+    .extra-thoughts, 
+    .contact-section {
+        max-width: 1000px;  
     }
 }
 
@@ -297,23 +304,20 @@ section[data-testid="test-about-extra"] h2 {
     width: 90%;
     max-width: 400px;
     padding: 10px 0;
-    
 }
 
 @media (max-width: 764px) {
     .contact-form {
-    max-width: 300px;
+    max-width: 400px;
     }
 
     .contact-section {
-        max-width: 400px;
+        max-width: 500px;
     }
 
-    .nav-btn {
-        margin-right: 10px;
+    .nav-link {
+        gap: 10px;
     }
-
-
 }
 
 .form-group {
@@ -360,21 +364,18 @@ form button {
 }
 
 .nav-link {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
-  width: 100%;
+  gap: 16px;
   
 }
 
 .nav-btn {
-    margin-right: 20px;
     font-weight: 600;
-    background: none;
     color: #fff;
     background: transparent;
-    text-decoration: none;
     transition: all 0.3s ease;
     font-weight: 600;
     font-size: 18px;
@@ -385,6 +386,7 @@ form button {
 
 .nav-btn:hover {
     border: 1px solid #4a62cf;
+    background-color: #4a62cf;
 
 }
 
